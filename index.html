@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Weather Forecast</h1>
+    </header>
+    <div id="container">
+      <div id="location_1">
+        <form>
+          <p>
+            <label for="city">Location</label>
+            <input id="city" name="city" type="text" />
+          </p>
+          <p class="search">
+            <input type="button" value="Go" id="search_btn" />
+          </p>
+        </form>
+
+        <div class="forecasts">
+          <section class="day_1">
+            <div class="date" id="date_1"></div>
+            <div class="weather">
+              <p><img id="weather_pic_1" src="" alt="" /></p>
+              <p id="weather_1"></p>
+            </div>
+            <div class="highest_temp">
+              <label for="highest_1">Highest</label>
+              <p id="highest_1"></p>
+            </div>
+            <div class="lowest_temp">
+              <label for="lowest_1">Lowest</label>
+              <p class="lowest_tmp" id="lowest_1"></p>
+            </div>
+          </section>
+
+          <section class="day_2">
+            <div class="date" id="date_2"></div>
+            <div class="weather">
+              <p><img id="weather_pic_2" src="" alt="" /></p>
+              <p id="weather_2"></p>
+            </div>
+            <div class="highest_temp">
+              <label for="highest_2">Highest</label>
+              <p id="highest_2"></p>
+            </div>
+            <div class="lowest_temp">
+              <label for="lowest_2">Lowest</label>
+              <p class="lowest_tmp" id="lowest_2"></p>
+            </div>
+          </section>
+
+          <section class="day_3">
+            <div class="date" id="date_3"></div>
+            <div class="weather">
+              <p><img id="weather_pic_3" src="" alt="" /></p>
+              <p id="weather_3"></p>
+            </div>
+            <div class="highest_temp">
+              <label for="highest_3">Highest</label>
+              <p id="highest_3"></p>
+            </div>
+            <div class="lowest_temp">
+              <label for="lowest_3">Lowest</label>
+              <p class="lowest_tmp" id="lowest_3"></p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/fetch.js"></script>
+  </body>
+</html>
